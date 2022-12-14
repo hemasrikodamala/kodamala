@@ -12,10 +12,13 @@ pipeline {
                 echo('compiling the code')
                 }
                 }
+                }
                 {
                 stage('install'){
                 steps
                 echo('install the code')
+                }
+                }
                 }
                 {stage('deploy'){
                 steps
