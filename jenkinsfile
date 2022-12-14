@@ -4,28 +4,26 @@ pipeline {
     stages {
         stage('validate') {
             steps {
-                echo ('validating the code')
-                {
+                echo 'validating the code'
+                }
+                }              
                 stage('compile'){
                 steps
                 {
-                echo('compiling the code')
+                echo 'compiling the code'
                 }
-                }
-                }
-                {
-                stage('install'){
+                }                           
+                stage('installation'){
                 steps
-                echo('install the code')
+                echo 'install the code'
                 }
                 }
-                }
-                {stage('deploy'){
+                               stage('deploy'){
                 steps
                 {
-                echo('deploy the code')
+                echo 'deploy the code'
                } 
             }
         }
     }
-}
+
